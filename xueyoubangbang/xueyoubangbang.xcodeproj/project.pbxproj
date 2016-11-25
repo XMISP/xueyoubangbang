@@ -4314,7 +4314,7 @@
 				D49748AD1AC46194002690F0 /* Resources */,
 				F74F402DD88ACD19A9A22365 /* 📦 Embed Pods Frameworks */,
 				05F09E22633CE40BD8DADC6E /* 📦 Copy Pods Resources */,
-				C416BE331D088648009B400D /* ShellScript */,
+				88D78F9F34127D1642A5B334 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -4335,6 +4335,7 @@
 				D445A3951AC44F93006ECE76 /* Resources */,
 				4F269C4AD5FDB5B11F3C3BFE /* 📦 Embed Pods Frameworks */,
 				38EA18E2C907CB81FF622DBA /* 📦 Copy Pods Resources */,
+				D528B9CFB00877185DB47D1F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -4697,18 +4698,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C416BE331D088648009B400D /* ShellScript */ = {
+		88D78F9F34127D1642A5B334 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /Users/bob/APPS/xueyoubangbang_MVVM/xueyoubangbang/Pods/XcodeCoverage/exportenv.sh;
-			shellScript = /Users/bob/APPS/xueyoubangbang_MVVM/xueyoubangbang/Pods/XcodeCoverage/exportenv.sh;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xueyoubangbang/Pods-xueyoubangbang-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		CC34AAB8D660DFB4BC76BE5C /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -4723,6 +4726,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D528B9CFB00877185DB47D1F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xueyoubangbangTests/Pods-xueyoubangbangTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F74F402DD88ACD19A9A22365 /* 📦 Embed Pods Frameworks */ = {
